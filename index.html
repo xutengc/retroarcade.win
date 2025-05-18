@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroArcade - Classic Arcade Games Online | Play Now</title>
+    <meta name="description" content="Experience the nostalgia of classic arcade games online at RetroArcade. Play Bounce, Snake, Tetris, and more games for free in your browser.">
+    <link rel="canonical" href="https://retroarcade.win/">
+    <meta name="keywords" content="retroarcade, retro games, arcade games, classic games, online games, bounce, snake, tetris">
+    <meta property="og:title" content="RetroArcade - Classic Arcade Games Online">
+    <meta property="og:description" content="Play classic arcade games online for free. No download required.">
+    <meta property="og:url" content="https://retroarcade.win/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            green: '#34C759',
+                            indigo: '#5856D6',
+                            orange: '#FF9500',
+                            pink: '#FF2D55',
+                            purple: '#AF52DE',
+                            red: '#FF3B30',
+                            teal: '#5AC8FA',
+                            yellow: '#FFCC00',
+                            gray: {
+                                100: '#F2F2F7',
+                                200: '#E5E5EA',
+                                300: '#D1D1D6',
+                                400: '#C7C7CC',
+                                500: '#AEAEB2',
+                                600: '#8E8E93',
+                                700: '#636366',
+                                800: '#48484A',
+                                900: '#3A3A3C',
+                                950: '#1C1C1E',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-container {
+            aspect-ratio: 4/3;
+            max-height: 80vh;
+        }
+        @media (max-width: 768px) {
+            .game-container {
+                aspect-ratio: 1/1;
+                height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray-100 dark:bg-apple-gray-950 text-apple-gray-900 dark:text-white">
+    <header class="bg-apple-blue text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-3xl md:text-4xl font-bold">RetroArcade</h1>
+                <p class="text-sm md:text-base mt-1">Experience the golden age of gaming in your browser</p>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#games" class="hover:underline">Games</a></li>
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section class="mb-12">
+            <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-apple-blue mb-2">Featured Game: Bounce</h2>
+                    <p class="text-apple-gray-700 dark:text-apple-gray-300 mb-4">A classic ball bouncing game that tests your reflexes and precision.</p>
+                </div>
+                <div class="game-container w-full bg-black">
+                    <iframe 
+                        src="http://tommalbran.github.io/games/" 
+                        class="w-full h-full border-0"
+                        allowfullscreen
+                        title="RetroArcade Games - Play Bounce, Snake, Tetris and more">
+                    </iframe>
+                </div>
+                <div class="p-6 bg-apple-gray-100 dark:bg-apple-gray-800">
+                    <p class="text-sm text-apple-gray-600 dark:text-apple-gray-400">
+                        Use the sidebar to select different games including Snake, Tetris, Defender, Pacman, Puzzle, and Spider.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="mb-12">
+            <h2 class="text-2xl font-bold text-apple-purple mb-6">Available Games</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Bounce</h3>
+                        <p class="text-apple-gray-700 dark:text-apple-gray-300 text-sm mt-1">Navigate a bouncing ball through challenging levels.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Snake</h3>
+                        <p class="text-apple-gray-700 dark:text-apple-gray-300 text-sm mt-1">Grow your snake by eating food while avoiding collisions.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Tetris</h3>
+                        <p class="text-apple-gray-700 dark:text-apple-gray-300 text-sm mt-1">Arrange falling blocks to create complete lines.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Defender</h3>
+                        <p class="text-apple-gray-700 dark:text-apple-gray-300 text-sm mt-1">Protect your base from incoming enemies.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Pacman</h3>
+                        <p class="text-apple-gray-700 dark:text-apple-gray-300 text-sm mt-1">Navigate mazes eating dots while avoiding ghosts.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Puzzle</h3>
+                        <p class="text-apple-gray-700 dark:text-apple-gray-300 text-sm mt-1">Exercise your brain with challenging puzzles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-12">
+            <h2 class="text-2xl font-bold text-apple-green mb-6">About RetroArcade</h2>
+            <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md p-6">
+                <p class="mb-4">RetroArcade brings back the nostalgia of classic arcade games from the 80s and 90s. Our collection features carefully recreated versions of the most beloved arcade titles, optimized for modern browsers.</p>
+                <p class="mb-4">All games are free to play and require no downloads or installations. Simply visit our website and start playing instantly on any device, whether you're on a desktop computer, tablet, or smartphone.</p>
+                <p>Our platform is constantly evolving with new games being added regularly. We're committed to preserving the golden age of arcade gaming and making these classics accessible to everyone.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h2 class="text-2xl font-bold text-apple-orange mb-6">Contact Us</h2>
+            <div class="bg-white dark:bg-apple-gray-900 rounded-xl shadow-md p-6">
+                <p class="mb-4">Have questions, suggestions, or feedback? We'd love to hear from you!</p>
+                <p class="mb-4">Email us at: <a href="mailto:contact@retroarcade.win" class="text-apple-blue hover:underline">contact@retroarcade.win</a></p>
+                <p>Follow us on social media for updates and new game announcements.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-gray-900 text-white p-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">RetroArcade</h2>
+                    <p class="text-sm text-apple-gray-400">© 2023 RetroArcade.win. All rights reserved.</p>
+                </div>
+                <div>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="text-apple-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-apple-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Check for dark mode preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+
+        // Listen for changes in color scheme preference
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (e.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+</html> 
